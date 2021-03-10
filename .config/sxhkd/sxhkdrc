@@ -23,9 +23,9 @@ super + d
 super + e
 	thunar
 
-# brave
+# firefox
 super + F1
-	brave
+	firefox
 
 # discord
 super + F2
