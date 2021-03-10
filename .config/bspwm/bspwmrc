@@ -16,6 +16,6 @@ bspc config normal_border_color  "#5e4c44"
 # autostart 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-feh --bg-fill ~/pictures/wallpapers/rosebox.png
+feh --bg-fill ~/Pictures/Wallpapers/rosebox.png
 killall -q polybar
 polybar example -q
