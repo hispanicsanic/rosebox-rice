@@ -7,9 +7,7 @@ Print
 	scrot screenshot.png
 
 
-#
-# opening shit
-#
+# opening shit #
 
 # kitty
 super + Return
@@ -31,18 +29,12 @@ super + F1
 super + F2
 	discord
 
-# vsc
-super + F3
-	code
-
 # mmc
 super + F4
 	multimc
 
 
-#
-# bspwm hotkeys
-#
+# bspwm hotkeys #
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -64,9 +56,8 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-#
-# state/flags
-#
+
+# state/flags #
 
 # set the window state
 super + {t,shift + t,s,f}
@@ -89,9 +80,7 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 
-#
-# move/resize
-#
+# move/resize #
 
 # expand a window by moving one of its side outward
 super + alt +  {Left,Down,Up,Right}
