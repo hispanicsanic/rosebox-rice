@@ -1,5 +1,13 @@
 #! /bin/sh
 
+# autostart 
+pgrep -x sxhkd > /dev/null || sxhkd &
+picom &
+feh --bg-fill ~/Pictures/Wallpapers/rosebox.png
+killall -q polybar
+polybar example -q
+
+
 # config 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 bspc config border_width         3
@@ -12,10 +20,3 @@ bspc config gapless_monocle      false
 # colorscheme
 bspc config focused_border_color "#a57562"
 bspc config normal_border_color  "#5e4c44"
-
-# autostart 
-pgrep -x sxhkd > /dev/null || sxhkd &
-picom &
-feh --bg-fill ~/Pictures/Wallpapers/rosebox.png
-killall -q polybar
-polybar example -q
