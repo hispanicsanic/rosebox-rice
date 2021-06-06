@@ -1,0 +1,24 @@
+sw_volume: 51
+audio_device_state:1:pulse audio
+state: stop
+current: 0
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Caravan Palace - I°_°I/Lone Digger.mp3
+1:Caravan Palace - I°_°I/Comics.mp3
+2:Caravan Palace - I°_°I/Mighty (feat. JFTH).mp3
+3:Caravan Palace - I°_°I/Aftermath.mp3
+4:Caravan Palace - I°_°I/Wonderland.mp3
+5:Caravan Palace - I°_°I/Tattoos.mp3
+6:Caravan Palace - I°_°I/Midnight.mp3
+7:Caravan Palace - I°_°I/Russian.mp3
+8:Caravan Palace - I°_°I/Wonda.mp3
+9:Caravan Palace - I°_°I/Human Leather Shoes for Crocodile Dandies.mp3
+10:Caravan Palace - I°_°I/Lay Down.mp3
+playlist_end
