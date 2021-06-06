@@ -1,3 +1,4 @@
+rm -rf ~/.cache/screenshots/*
 mpd &
 mpDris2 &
 sxhkd &
