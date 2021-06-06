@@ -2,6 +2,9 @@
 super + Escape
 	pkill -USR1 -x sxhkd
 
+
+### screenshots ###
+
 # regular screenshot
 Print
 	scrot ~/pictures/screenshots/screenshot.png
@@ -18,6 +21,9 @@ alt + Print
 super + Print
 	scrot --select -e 'xclip -selection clipboard -t image/png -i $f' ~/.cache/screenshots/screenshot.png
 
+
+### volume controls ###
+
 # increase volume
 XF86AudioRaiseVolume
     pactl set-sink-volume 0 +5%; pkill -RTMIN+10 dwmblocks 
@@ -30,18 +36,38 @@ XF86AudioLowerVolume
 XF86AudioMute
     pactl set-sink-mute 0 toggle; pkill -RTMIN+10 dwmblocks
 
+
+### media keys ###
+
+# play/pause
+super + F1
+	playerctl --player=mpd play-pause
+
+super + F2
+	playerctl --player=mpd previous
+
+super + F3
+	playerctl --player=mpd next
+
+
+### opening shit ###
+
 # file manager
 super + e
 	pcmanfm
 
 # firefox
 super + b
-	firefox
+	brave
 
 # discord
 super + c
-	discord-canary
+	discord
 
 # steam
 super + g
 	steam
+
+# ncmpcpp
+super + p
+	exec /usr/bin/kitty -e ncmpcpp
