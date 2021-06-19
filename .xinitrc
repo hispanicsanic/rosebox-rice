@@ -3,7 +3,8 @@ mpd &
 mpDris2 &
 sxhkd &
 picom &
-xwallpaper --no-randr --center ~/pictures/wallpapers/otter.png
+unclutter &
+xwallpaper --no-randr --maximize ~/pictures/wallpapers/gruvbox-city.png
 dwmblocks &
 pkill -RTMIN+20 dwmblocks
-dwm
+exec dwm
