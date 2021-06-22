@@ -90,3 +90,7 @@ super + shift + g
 # ncmpcpp
 super + p
 	exec /usr/bin/kitty -e ncmpcpp
+
+# vncviewer
+super + v
+	vncviewer
