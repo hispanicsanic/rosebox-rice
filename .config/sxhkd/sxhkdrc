@@ -2,6 +2,10 @@
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# logout
+super + shift + Delete
+	bash ~/.local/bin/logout-menu.sh
+
 
 ### screenshots ###
 
@@ -20,6 +24,15 @@ alt + Print
 # select screenshot to clipboard
 super + Print
 	scrot --select -e 'xclip -selection clipboard -t image/png -i $f' ~/.cache/screenshots/screenshot.png
+
+
+### backlght controls ###
+
+# increase brightness
+
+
+# decrease brightness
+
 
 
 ### volume controls ###
@@ -67,6 +80,10 @@ super + shift + Escape
 	bash ~/.local/bin/display-selector.sh
 
 ### opening shit ###
+
+# kitty
+super + Return
+	kitty
 
 # file manager
 super + e
