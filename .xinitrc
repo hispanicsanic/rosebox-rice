@@ -1,14 +1,11 @@
 rm -rf ~/.cache/screenshots/*
-mpd &
+[ ! -s ~/.config/mpd/pid ] && mpd
 mpDris2 &
 sxhkd &
 picom &
 unclutter &
-xwallpaper --no-randr --maximize ~/pictures/wallpapers/gruvbox-city.png
-killall discord
 killall steam
-discord &
-steam &
+killall discord
+xwallpaper --no-randr --maximize ~/pictures/wallpapers/otter.png
 dwmblocks &
-pkill -RTMIN+20 dwmblocks
 exec dwm
