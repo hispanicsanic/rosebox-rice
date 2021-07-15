@@ -3,15 +3,15 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 setopt COMPLETE_ALIASES
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #title
-print -n '\e]2;kitty\a'
+echo -n -e "\033]0;kitty\007"
 
 #theme
 zstyle ':completion:*' menu select
-prompt redhat
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+PROMPT="%B%~ $ "
 
 #keybinds
 typeset -g -A key

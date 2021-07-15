@@ -1,11 +1,9 @@
 rm -rf ~/.cache/screenshots/*
-[ ! -s ~/.config/mpd/pid ] && mpd
+mpd &
 mpDris2 &
 sxhkd &
 picom &
 unclutter &
-killall steam
-killall discord
-xwallpaper --no-randr --maximize ~/pictures/wallpapers/otter.png
+xwallpaper --no-randr --maximize ~/pictures/wallpapers/sierra.jpg
 dwmblocks &
 exec dwm
