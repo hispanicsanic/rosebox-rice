@@ -6,6 +6,9 @@ super + Escape
 super + shift + Delete
 	bash ~/.local/bin/logout-menu.sh
 
+# lock
+super + Delete
+	xlock -mode rain
 
 ### screenshots ###
 
@@ -108,6 +111,10 @@ super + shift + g
 super + p
 	exec /usr/bin/kitty -e ncmpcpp
 
-# vncviewer
-super + v
-	vncviewer
+# dmenu
+super + d
+	dmenu_run
+
+# cmatrix
+super + shift + o
+	exec /usr/bin/kitty -e cmatrix
