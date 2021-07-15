@@ -1,12 +1,12 @@
 #!/bin/sh
-
-available="$(xrandr -q | grep " connected" | awk '{printf $1"\n"}')"
-displayno="$(xrandr -q | grep " connected" | awk '{printf $1"\n"}' | wc -w)"
+available="$(xrandr -q | grep " connected" | awk '{print $1}')"
+echo $available
+displayno="$(echo -e "$available" | wc -w)"
 
 if [ "$displayno" = "1" ]; then
 	display="$available"
 else
-	display="$(xrandr -q | grep " connected" | awk '{printf $1"\n"}' | dmenu -i -l 30 -nb '#282828' -nf '#D8DEE9' -sb '#81A1C1' -sf '#282828' -fn 'Cascadia Code-12')"
+	display="$(echo -e "$available" | dmenu -i)"
 fi
 
 case "$display" in

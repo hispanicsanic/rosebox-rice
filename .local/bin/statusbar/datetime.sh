@@ -1,16 +1,16 @@
 #!/bin/sh
-day="$(date +%d | awk '{print substr($0,length,1)}')"
+day="$(date +%d)"
 
-if [ "$day" = "1" ]; then
-	date '+%a %dst %b, %H:%M'  	
+if [ "$day" = "1" ] || [ "$day" = "21" ] || [ "$day" = "31" ]; then
+	date "+%a %dst %b, %H:%M"
 	
-elif [ "$day" = "2" ]; then
-	date '+%a %dnd %b, %H:%M'  
+elif [ "$day" = "2" ] || [ "$day" = "22" ]; then
+	date "+%a %dnd %b, %H:%M"
 
-elif [ "$day" = "3" ]; then
-	date '+%a %drd %b, %H:%M' 
+elif [ "$day" = "3" ] || [ "$day" = "23" ]; then
+	date "+%a %drd %b, %H:%M"
 
 else 
-	date '+%a %dth %b, %H:%M'
+	date "+%a %dth %b, %H:%M"
 
 fi
